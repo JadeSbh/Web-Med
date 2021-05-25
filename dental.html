@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home's Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dental.css">
+  <style>
+    * {
+      outline: 2px solid red;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* max width to my paragraphs 40 characters per line*/
+    p, h1, h2 {
+      max-width: 40ch;
+    }
+
+    header {
+
+
+    }
+
+    .flex-container {
+      display: flex;
+      background-color: #f7f7f8;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-content: stretch;
+      margin-top: 0;
+
+    }
+
+    .flex-item {
+      float: left;
+      display: inline;
+      border: 2px solid black;
+    }
+
+    /*
+    @media (max-width: 800px) {
+  .flex-item {
+    flex: 100%;
+    max-width: 100%;
+    clear: both;
+    }
+  } */
+    nav {
+      list-style-type: none;
+      float: right;
+      background-color: #4678ad;
+      padding: 2%;
+      margin: 0;
+    }
+
+    .nav-container {
+      width: 100%;
+      background-color: #4678ad;
+    }
+
+    .nav-container::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 10px;
+      position: relative;
+
+    }
+
+    nav li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #444;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    nav a::before {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: #5ce0e6;
+      position: absolute;
+      top: -40%;
+      width: 0;
+      transition: all ease-in-out 1000ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    .nav2 {
+      background-color: #5ce0e6;
+      border: 1px solid black;
+      padding: 1.5%;
+    }
+
+    .item1 {
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 10%;
+    }
+
+    #item1-container {
+      border: 2px solid blue;
+      margin-left: 20px;
+    }
+
+    footer {
+      background-color: #4678ad;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<div class="nav-container">
+  <button type="submit" onclick="alert('contact-info')">Book now!</button>
+  <nav>
+    <ul>
+      <li><a href="classes.html">line1</a></li>
+      <li><a href="classes.html">line2</a></li>
+      <li><a href="classes.html">line3</a></li>
+      <li><a href="classes.html">line4</a></li>
+    </ul>
+  </nav>
+</div>
+<body onload="Hello();">
+<header>
+  <div class="flex-container">
+    <div class=flex-item style="flex: 60%"><img src="img/hclassic.png" height="312" width="820" alt="logo"/></div>
+    <div class=flex-item style=" margin-right: 5%; flex: 10%">
+      <div class="item1"><p>sergion</p></div>
+    </div>
+    <div class=flex-item style="flex: 10%">
+      <div class="item1"><p>dental care</p></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="nav2"></div>
+  <div class="flex-container">
+    <div class="flex-item" style="flex: 33%"><p>item2</p></div>
+    <div class="flex-item" style="flex: 33%"><p>item2</p></div>
+    <div class="flex-item" style="flex: 33%"><p>item3</p></div>
+  </div>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
+
