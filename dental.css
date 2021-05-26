@@ -122,3 +122,51 @@ footer {
   border: 2px solid black;
 }
 
+   /* glitch effect */
+    .glitch {
+      font-size: 1rem;
+      font-weight: 200;
+      text-transform: uppercase;
+
+      text-shadow: 0.05em 0 0 rgb(229, 93, 222),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+     0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      animation: glitch 600ms infinite;
+    }
+    @keyframes glitch {
+      0% {
+        text-shadow: 0.05em 0 0 rgb(229, 93, 222),
+    -0.05em -0.025em 0 rgb(92, 223, 229),
+     -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      14% {
+        text-shadow: 0.05em 0 0 rgb(229, 93, 222),
+    -0.05em -0.025em 0 rgb(92, 223, 229),
+     -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      15% {
+        text-shadow: -0.05em -0.025em 0 rgb(229, 93, 222),
+         0.025em 0.025em 0 rgb(92, 223, 229),
+     -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      49% {
+        text-shadow: -0.05em -0.025em 0 rgb(92, 223, 229),
+    0.025em 0.025em 0 rgb(229, 93, 222) ,
+     -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      50% {
+        text-shadow: 0.025em 0.05em 0 rgb(229, 93, 222),
+      0.05em  0 0 rgb(92, 223, 229),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+       99% {
+        text-shadow: 0.025em 0.05em 0 rgb(229, 93, 222),
+      0.05em  0 0 rgb(92, 223, 229),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      100% {
+          text-shadow: -0.025em 0 0 rgba(255,0, 0, 0.75),
+    -0.025em -0.025em 0 rgb(92, 223, 229),
+     -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      }
