@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>Home's Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dental.css">
+  <link rel="stylesheet" href="pdental.css">
   <style>
-    /*
+
     * {
       box-sizing: border-box;
-    } -->  */
+    }
 
     /* max width to my paragraphs 40 characters per line*/
     p, h1, h2 {
@@ -28,13 +28,15 @@
       justify-content: left;
       align-content: stretch;
       margin-top: 0;
+      gap: 7px;
 
     }
 
     .flex-item {
       float: left;
       display: inline;
-      border: 2px solid
+
+      /* border: 2px solid black;*/
     }
 
     /*
@@ -104,12 +106,12 @@
 
     .nav2 {
       background-color: #5ce0e6;
-      border: 1px solid black;
+      /*border: 1px solid black;*/
       padding: 1.5%;
     }
 
     .item1 {
-      border: 1px solid black;
+      /* border: 1px solid black;*/
       border-radius: 20px;
       padding: 10%;
     }
@@ -121,8 +123,10 @@
 
     footer {
       background-color: #4678ad;
-      border: 2px solid black;
+      /*border: 2px solid black;*/
     }
+
+
   </style>
 </head>
 <div class="nav-container">
@@ -140,22 +144,27 @@
 
 <header>
   <div class="flex-container">
-    <div class=flex-item style="flex: 60%"><img src="img/hclassic.png" height="312" width="820" alt="logo"/></div>
-    <div class=flex-item style=" margin-right: 5%; flex: 10%">
-      <div class="item1"><p>sergion</p></div>
-    </div>
-    <div class=flex-item style="flex: 10%">
-      <div class="item1"><p>dental care</p></div>
-    </div>
+    <div class=flex-item style="flex: "><p>picture</p></div>
+    <div class="flex-item" style="flex: 30%"><p>statement</p></div>
+    <div class="item1"><p class="glitch">sergion</p></div>
+    <div class="item1"><p class="glitch">dental care</p></div>
   </div>
 </header>
 
 <main>
   <div class="nav2"></div>
   <div class="flex-container">
-    <div class="flex-item" style="flex: 33%"><p>item2</p></div>
-    <div class="flex-item" style="flex: 33%"><p>item2</p></div>
-    <div class="flex-item" style="flex: 33%"><p>item3</p></div>
+    <div class="flex-item" style="flex: 33%"><p>item00</p></div>
+    <div class="flex-item" style="flex: 33%"><p>item01</p></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-item" style="flex: 33%"><p>item10</p></div>
+    <div class="flex-item" style="flex: 33%"><p>item11</p></div>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item" style="flex: 33%"><p>item20</p></div>
+    <div class="flex-item" style="flex: 33%"><p>item21</p></div>
   </div>
 
 </main>
