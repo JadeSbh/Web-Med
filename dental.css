@@ -170,3 +170,123 @@ footer {
      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
       }
       }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* max width to my paragraphs 40 characters per line*/
+    p, h1, h2 {
+      max-width: 40ch;
+    }
+
+    header {
+
+
+    }
+
+    .flex-container {
+      display: flex;
+      background-color: #f7f7f8;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-content: stretch;
+      margin-top: 0;
+      gap: 7px;
+
+    }
+
+    .flex-item {
+      float: left;
+      display: inline;
+
+      /* border: 2px solid black;*/
+    }
+
+    /*
+    @media (max-width: 800px) {
+  .flex-item {
+    flex: 100%;
+    max-width: 100%;
+    clear: both;
+    }
+  } */
+    nav {
+      list-style-type: none;
+      float: right;
+      background-color: #4678ad;
+      padding: 2%;
+      margin: 0;
+    }
+
+    .nav-container {
+      width: 100%;
+      background-color: #4678ad;
+    }
+
+    .nav-container::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 10px;
+      position: relative;
+
+    }
+
+    nav li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #444;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    nav a::before {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: #5ce0e6;
+      position: absolute;
+      top: -40%;
+      width: 0;
+      transition: all ease-in-out 1000ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    .nav2 {
+      background-color: #5ce0e6;
+      /*border: 1px solid black;*/
+      padding: 1.5%;
+    }
+
+    .item1 {
+      /* border: 1px solid black;*/
+      border-radius: 20px;
+      padding: 10%;
+    }
+
+    #item1-container {
+      border: 2px solid blue;
+      margin-left: 20px;
+    }
+
+    footer {
+      background-color: #4678ad;
+      /*border: 2px solid black;*/
+    }
+
